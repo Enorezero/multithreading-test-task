@@ -1,8 +1,9 @@
 package com.example.multithreadingtesttask.service;
 
 import java.util.List;
+import java.util.concurrent.ExecutionException;
 
-public interface WordOccurenceService {
+public interface WordOccurrenceService {
 
-    List<Integer> foundIndexes();
+    List<Integer> getWordOccurrencesIndexes(String word) throws ExecutionException, InterruptedException;
 }
